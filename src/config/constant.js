@@ -1,0 +1,1 @@
+process.env.domain = 'http://localhost:3000/';
