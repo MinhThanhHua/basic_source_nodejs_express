@@ -1,0 +1,66 @@
+<head>
+    <meta charSet="utf-8"></meta>
+    <meta httpequiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>SB Admin - Dashboard</title>
+    <link href={{ domain '/stylesheets/vendor/fontawesome-free/css/all.min.css'}} rel="stylesheet" type="text/css"/>
+    <link href={{ domain '/stylesheets/vendor/datatables/dataTables.bootstrap4.css'}}  rel="stylesheet"/>
+    <link href={{ domain '/stylesheets/sb-admin.css'}}  rel="stylesheet"/>
+</head>
+<body id="page-top">
+    {{> navigate }}
+    <div id="wrapper">
+
+        {{> leftMenu }}
+
+        <div id="content-wrapper">
+            {{{ body }}}
+            <footer class="sticky-footer">
+                <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>Copyright © Your Website 2019</span>
+                </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <div class="modal fade" id="logoutModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+            </div>
+            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+            <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+            </div>
+        </div>
+        </div>
+    </div>
+{{#*inline "myPartial"}}
+  My Content
+{{/inline}}
+ {{> myPartial}}
+
+    <script src={{ domain '/javascripts/vendor/jquery/jquery.min.js'}}></script>
+    <script src={{ domain '/javascripts/vendor/bootstrap/js/bootstrap.bundle.min.js'}}></script>
+    <script src={{ domain '/javascripts/vendor/jquery-easing/jquery.easing.min.js'}}></script>
+    <script src={{ domain '/javascripts/vendor/chart.js/Chart.min.js'}}></script>
+    <script src={{ domain '/javascripts/vendor/datatables/jquery.dataTables.js'}}></script>
+    <script src={{ domain '/javascripts/vendor/datatables/dataTables.bootstrap4.js'}}></script>
+    <script src={{ domain '/javascripts/sb-admin.min.js'}}></script>
+    <script src={{ domain '/javascripts/demo/datatables-demo.js'}}></script>
+    <script src={{ domain '/javascripts/demo/chart-area-demo.js'}}></script>
+  
+</body>
